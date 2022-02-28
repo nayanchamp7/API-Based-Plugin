@@ -1,0 +1,73 @@
+.svnignore
+.DS_Store
+node_modules
+build
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+phpcs.*
+!phpcs.xml
+wahid_phpcs.xml
+# Editor directories and files
+.php_cs.cache
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
+*.zip
+.htaccess
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generated CSS & JS file exluded
+admin/css/woo-feed-admin.css
+admin/css/woo-feed-admin.min.css
+admin/js/woo-feed-admin.min.js
+admin/js/woo-feed-admin.min.js.map
+
+admin/js/woo-feed-admin-pro.min.js
+admin/js/woo-feed-admin-pro.min.js.map
+
+admin/css/fancy-select.css
+admin/css/fancy-select.min.css
+admin/css/woo-feed-admin-pro.css
+admin/css/woo-feed-admin-pro.min.css
+
+admin/js/fancy-select.min.js
+admin/js/fancy-select.min.js.map
+admin/js/jquery-sortable.min.js
+admin/js/jquery-sortable.min.js.map
+
+admin/js/woo-feed-facebook-pixel.min.js
+admin/js/woo-feed-facebook-pixel.min.js.map
+
+admin/js/woo-feed-google-remarketing.min.js
+admin/js/woo-feed-google-remarketing.min.js.map
+
+# Auto Generated pot file removed.
+languages/woo-feed.pot
+
+wahid_phpcs.xml
+
+# Cache files
+*.cache
+
+# Phpunit
+tests/phpunit/wp-tests-config.php
+
+# Composer
+vendor
