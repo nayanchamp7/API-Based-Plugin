@@ -24,5 +24,7 @@ class ABP {
      */
     public function init() {
         $admin = new Admin();
+        $assets = new Assets();
+
     }
 }

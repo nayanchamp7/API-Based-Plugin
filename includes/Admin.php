@@ -18,7 +18,6 @@ class Admin {
     public function __construct() {
         //add_action( 'admin_init', array( $this, 'admin_init' ) );
         $menus = new Menus();
-        $assets = new Assets();
     }
 
     /**
