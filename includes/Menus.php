@@ -1,12 +1,12 @@
 <?php
 /**
- * ABP Menus
+ * AMU Menus
  *
  * @class    Menus
  * @since   1.0.0
  */
 
-namespace ABP\Library;
+namespace AMU\Library;
 
 /**
  * Menus class.
@@ -24,13 +24,13 @@ class Menus {
      * Menu Page.
      */
     public function admin_menu() {
-        add_menu_page(__('API Based Plugin', 'api-based-plugin'), __('API Based Plugin', 'api-based-plugin'), 'manage_options', 'api-based-plugin', array( $this, 'abp_pages' ), 'dashicons-admin-users' );
+        add_menu_page(__('API Based Plugin', 'awesome-users'), __('Awesome Users', 'awesome-users'), 'manage_options', 'awesome-users', array( $this, 'amu_pages' ), 'dashicons-admin-users' );
     }
 
     /**
-     * ABP Pages
+     * AMU Pages
      */
-    public function abp_pages() {
-        include ABP_FILE_DIR . '/templates/admin/abp-lists.php';
+    public function amu_pages() {
+        include AMU_FILE_DIR . '/templates/amu-lists.php';
     }
 }

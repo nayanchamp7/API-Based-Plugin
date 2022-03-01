@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+#wpcontent {
+  padding-left: 0 !important;
+  position: relative;
+}
+
+.amu-wrapper #wpbody-content {
+  padding: 0 20px;
+}
+.amu-wrapper .amu-header {
+  border-top: 3px solid #ff982d;
+  padding: 24px 20px;
+}
+.amu-wrapper .amu-links {
+  background: #fff;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+.amu-wrapper table {
+  position: relative;
+}
+.amu-wrapper .amu-spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+.amu-wrapper .amu-spinner .amu-spinner-img {
+  background: url("../images/ajax-loader.gif") no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.amu-wrapper .amu-spinner .amu-spinner-content {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.amu-wrapper .amu-button {
+  font-weight: 700;
+  background-color: #ff982d;
+  border-color: #ff982d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.amu-wrapper .amu-button:hover {
+  background-color: #f97f00;
+  border-color: #f97f00;
+}

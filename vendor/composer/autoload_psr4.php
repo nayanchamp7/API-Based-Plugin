@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ABP\\Library\\' => array($baseDir . '/includes'),
+    'AMU\\Library\\' => array($baseDir . '/includes'),
 );
