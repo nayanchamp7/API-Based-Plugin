@@ -33,6 +33,10 @@
     min-height: 200px;
     position: relative;
     text-align: center;
+
+    th, td {
+      text-align: center;
+    }
   }
   .amu-spinner {
     position: absolute;

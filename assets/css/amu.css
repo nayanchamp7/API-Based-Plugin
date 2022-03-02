@@ -36,6 +36,9 @@
   position: relative;
   text-align: center;
 }
+#amu-wrapper table th, #amu-wrapper table td {
+  text-align: center;
+}
 #amu-wrapper .amu-spinner {
   position: absolute;
   top: 0;
