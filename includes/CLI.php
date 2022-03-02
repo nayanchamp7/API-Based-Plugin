@@ -26,7 +26,9 @@ class CLI {
         ?>
         <script type="text/javascript">
             //refresh and get users data
-            window.amu_js.getUsers();
+            if( window.amu_js ) {
+                window.amu_js.getUsers();
+            }
         </script>
         <?php
     }
