@@ -1,7 +1,8 @@
-<div class="amu-wrapper" id="amu-wrapper">
+<div class="amu-wrapper <?php echo is_admin() ? esc_attr('amu-admin-wrapper') : esc_attr('amu-front-wrapper'); ?>" id="amu-wrapper">
     <div class="amu-header">
-        <?php echo sprintf('<h1>%s</h1>', esc_html__('Awesome Users', 'awesome-users')); ?>
+        <?php echo sprintf('<h2>%s</h2>', esc_html__('Awesome Users', 'awesome-users')); ?>
     </div>
+
     <div id="wp-body">
         <div id="wpbody-content">
             <div class="amu-links">

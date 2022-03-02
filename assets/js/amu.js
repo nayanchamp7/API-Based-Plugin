@@ -57,6 +57,7 @@ jQuery(document).ready(function ($) {
 
             let headers = data.data.headers;
             let users = data.data.rows;
+
             jQuery.each(headers, function(index, item) {
                 let header_items = $('<th>').attr({
                     scope: 'col',
@@ -67,6 +68,7 @@ jQuery(document).ready(function ($) {
                 header_items.appendTo('.amu-wrapper table thead tr');
                 header_items.clone().appendTo('.amu-wrapper table tfoot tr');
             });
+
             jQuery.each(users, function(index, item) {
                 let user_item_td = $('<td>').attr({
                     scope: 'col',
@@ -95,6 +97,7 @@ jQuery(document).ready(function ($) {
             //load spinner
             $('.amu-wrapper table').prepend('<div class="amu-spinner"><div class="amu-spinner-content"><span class="amu-spinner-img"></span> Loading Data...</div></div>');
 
+            //api call to get users
             $.get( "https://miusage.com/v1/challenge/1/", function( data, status ) {
                 if( "success" === status ) {
                     $.amu_js.execute = false;
@@ -116,5 +119,9 @@ jQuery(document).ready(function ($) {
         }
     };
 
+    // expose to the global scope
+    window.amu_js = $.amu_js;
+
+    //init main js
     $.amu_js.init();
 });

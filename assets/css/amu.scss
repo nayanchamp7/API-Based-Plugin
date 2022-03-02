@@ -5,13 +5,23 @@
   padding-left: 0 !important;
   position: relative;
 }
-.amu-wrapper {
+#amu-wrapper {
+  max-width: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   #wpbody-content {
     padding: 0 20px;
+    width: 100%;
+    min-width: 700px;
   }
   .amu-header {
+    width: 100%;
     border-top: 3px solid #ff982d;
     padding: 24px 20px;
+    font-size: 24px;
   }
   .amu-links {
     background: #fff;
@@ -19,7 +29,10 @@
     margin-bottom: 20px;
   }
   table {
+    width: 100%;
+    min-height: 200px;
     position: relative;
+    text-align: center;
   }
   .amu-spinner {
     position: absolute;
@@ -63,6 +76,29 @@
     &:hover {
       background-color: #f97f00;
       border-color: #f97f00;
+    }
+  }
+
+  &.amu-front-wrapper {
+    .amu-header {
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        border: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .amu-links {
+      display: none;
+    }
+
+    table {
+      th, td {
+        border: 1px solid black;
+      }
     }
   }
 }

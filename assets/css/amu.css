@@ -7,22 +7,36 @@
   position: relative;
 }
 
-.amu-wrapper #wpbody-content {
-  padding: 0 20px;
+#amu-wrapper {
+  max-width: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.amu-wrapper .amu-header {
+#amu-wrapper #wpbody-content {
+  padding: 0 20px;
+  width: 100%;
+  min-width: 700px;
+}
+#amu-wrapper .amu-header {
+  width: 100%;
   border-top: 3px solid #ff982d;
   padding: 24px 20px;
+  font-size: 24px;
 }
-.amu-wrapper .amu-links {
+#amu-wrapper .amu-links {
   background: #fff;
   padding: 20px 15px;
   margin-bottom: 20px;
 }
-.amu-wrapper table {
+#amu-wrapper table {
+  width: 100%;
+  min-height: 200px;
   position: relative;
+  text-align: center;
 }
-.amu-wrapper .amu-spinner {
+#amu-wrapper .amu-spinner {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +47,7 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
 }
-.amu-wrapper .amu-spinner .amu-spinner-img {
+#amu-wrapper .amu-spinner .amu-spinner-img {
   background: url("../images/ajax-loader.gif") no-repeat;
   background-size: cover;
   display: inline-block;
@@ -41,7 +55,7 @@
   width: 20px;
   margin-right: 5px;
 }
-.amu-wrapper .amu-spinner .amu-spinner-content {
+#amu-wrapper .amu-spinner .amu-spinner-content {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -49,7 +63,7 @@
   font-size: 18px;
   font-weight: 700;
 }
-.amu-wrapper .amu-button {
+#amu-wrapper .amu-button {
   font-weight: 700;
   background-color: #ff982d;
   border-color: #ff982d;
@@ -58,7 +72,21 @@
   border-radius: 3px;
   text-decoration: none;
 }
-.amu-wrapper .amu-button:hover {
+#amu-wrapper .amu-button:hover {
   background-color: #f97f00;
   border-color: #f97f00;
+}
+#amu-wrapper.amu-front-wrapper .amu-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#amu-wrapper.amu-front-wrapper .amu-links {
+  display: none;
+}
+#amu-wrapper.amu-front-wrapper table th, #amu-wrapper.amu-front-wrapper table td {
+  border: 1px solid black;
 }

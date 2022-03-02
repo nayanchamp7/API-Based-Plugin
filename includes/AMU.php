@@ -32,6 +32,7 @@ class AMU {
         if ( is_admin() ) {
             new Menus();
         }
+
         //init asset class
         new Assets();
 
