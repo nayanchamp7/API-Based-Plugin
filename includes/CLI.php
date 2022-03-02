@@ -16,11 +16,11 @@ class CLI {
      * Constructor.
      */
     public function __construct() {
-        add_action( 'admin_footer', array($this, 'run_footer') );
+        add_action( 'admin_footer', array( $this, 'run_footer' ) );
     }
 
     /**
-     * Initialize Main class
+     * Run footer
      */
     public function run_footer() {
         ?>

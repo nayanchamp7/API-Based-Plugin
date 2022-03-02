@@ -24,7 +24,7 @@ class Menus {
      * Menu Page.
      */
     public function admin_menu() {
-        add_menu_page(__('API Based Plugin', 'awesome-users'), __('Awesome Users', 'awesome-users'), 'manage_options', 'awesome-users', array( $this, 'amu_pages' ), 'dashicons-admin-users' );
+        add_menu_page(__('Awesome Users', 'awesome-users'), __('Awesome Users', 'awesome-users'), 'manage_options', 'awesome-users', array( $this, 'amu_pages' ), 'dashicons-admin-users' );
     }
 
     /**
